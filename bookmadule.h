@@ -75,22 +75,22 @@ namespace bookstore {
 			this->book_author->AutoSize = true;
 			this->book_author->Font = (gcnew System::Drawing::Font(L"B Nazanin", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(178)));
-			this->book_author->Location = System::Drawing::Point(63, 215);
+			this->book_author->Location = System::Drawing::Point(51, 213);
 			this->book_author->Name = L"book_author";
-			this->book_author->Size = System::Drawing::Size(17, 23);
+			this->book_author->Size = System::Drawing::Size(47, 23);
 			this->book_author->TabIndex = 1;
-			this->book_author->Text = L"ع";
+			this->book_author->Text = L"نویسنده";
 			// 
 			// book_title
 			// 
 			this->book_title->AutoSize = true;
 			this->book_title->Font = (gcnew System::Drawing::Font(L"B Nazanin", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(178)));
-			this->book_title->Location = System::Drawing::Point(60, 178);
+			this->book_title->Location = System::Drawing::Point(39, 176);
 			this->book_title->Name = L"book_title";
-			this->book_title->Size = System::Drawing::Size(23, 27);
+			this->book_title->Size = System::Drawing::Size(69, 27);
 			this->book_title->TabIndex = 2;
-			this->book_title->Text = L"ی";
+			this->book_title->Text = L"اسم کتاب";
 			// 
 			// panel1
 			// 
