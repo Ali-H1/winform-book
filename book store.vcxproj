@@ -127,7 +127,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bookmadule.cpp" />
     <ClCompile Include="Form2.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="signup.cpp" />
@@ -135,9 +134,6 @@
     <ClCompile Include="signin.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bookmadule.h">
-      <FileType>CppControl</FileType>
-    </ClInclude>
     <ClInclude Include="Form2.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -156,9 +152,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="bookmadule.resx">
-      <DependentUpon>bookmadule.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>
