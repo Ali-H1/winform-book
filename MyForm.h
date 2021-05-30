@@ -2,7 +2,9 @@
 #include "signin.h"
 #include "signup.h"
 #include "signin-signup.h"
-
+#include <vector>
+#include <string>
+#include "bookmadule.h"
 namespace bookstore {
 
 	using namespace System;
@@ -26,6 +28,7 @@ namespace bookstore {
 			//
 			//TODO: Add the constructor code here
 			//
+			set_book_test();
 
 		}
 
@@ -116,6 +119,8 @@ namespace bookstore {
 	private: System::Windows::Forms::Panel^ panel32;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::FlowLayoutPanel^ main_page_panel;
+private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel1;
 
 
 
@@ -194,27 +199,29 @@ namespace bookstore {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel22 = (gcnew System::Windows::Forms::Panel());
-			this->panel15 = (gcnew System::Windows::Forms::Panel());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
-			this->panel16 = (gcnew System::Windows::Forms::Panel());
-			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
-			this->panel17 = (gcnew System::Windows::Forms::Panel());
-			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->panel20 = (gcnew System::Windows::Forms::Panel());
-			this->panel9 = (gcnew System::Windows::Forms::Panel());
-			this->panel21 = (gcnew System::Windows::Forms::Panel());
-			this->panel7 = (gcnew System::Windows::Forms::Panel());
-			this->panel26 = (gcnew System::Windows::Forms::Panel());
-			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->panel27 = (gcnew System::Windows::Forms::Panel());
-			this->panel8 = (gcnew System::Windows::Forms::Panel());
-			this->panel28 = (gcnew System::Windows::Forms::Panel());
+			this->main_page_panel = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel10 = (gcnew System::Windows::Forms::Panel());
-			this->panel29 = (gcnew System::Windows::Forms::Panel());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->panel9 = (gcnew System::Windows::Forms::Panel());
 			this->panel11 = (gcnew System::Windows::Forms::Panel());
 			this->panel30 = (gcnew System::Windows::Forms::Panel());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel29 = (gcnew System::Windows::Forms::Panel());
+			this->panel8 = (gcnew System::Windows::Forms::Panel());
+			this->panel27 = (gcnew System::Windows::Forms::Panel());
+			this->panel7 = (gcnew System::Windows::Forms::Panel());
+			this->panel21 = (gcnew System::Windows::Forms::Panel());
+			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->panel17 = (gcnew System::Windows::Forms::Panel());
+			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->panel16 = (gcnew System::Windows::Forms::Panel());
+			this->panel28 = (gcnew System::Windows::Forms::Panel());
+			this->panel26 = (gcnew System::Windows::Forms::Panel());
+			this->panel20 = (gcnew System::Windows::Forms::Panel());
+			this->panel15 = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
+			this->flowLayoutPanel1 = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->maxbtn))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->minbtn))->BeginInit();
@@ -242,7 +249,9 @@ namespace bookstore {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->panel22->SuspendLayout();
+			this->main_page_panel->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
+			this->flowLayoutPanel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -288,16 +297,9 @@ namespace bookstore {
 			// header
 			// 
 			this->header->BackColor = System::Drawing::Color::MidnightBlue;
+			this->header->Controls->Add(this->flowLayoutPanel1);
 			this->header->Controls->Add(this->panel31);
-			this->header->Controls->Add(this->panel19);
-			this->header->Controls->Add(this->panel32);
-			this->header->Controls->Add(this->panel14);
-			this->header->Controls->Add(this->panel23);
-			this->header->Controls->Add(this->panel12);
 			this->header->Controls->Add(this->panel24);
-			this->header->Controls->Add(this->panel25);
-			this->header->Controls->Add(this->panel18);
-			this->header->Controls->Add(this->panel13);
 			this->header->Controls->Add(this->pictureBox1);
 			resources->ApplyResources(this->header, L"header");
 			this->header->Name = L"header";
@@ -530,49 +532,174 @@ namespace bookstore {
 			// 
 			resources->ApplyResources(this->panel22, L"panel22");
 			this->panel22->BackColor = System::Drawing::SystemColors::Menu;
-			this->panel22->Controls->Add(this->panel15);
-			this->panel22->Controls->Add(this->panel5);
-			this->panel22->Controls->Add(this->panel16);
+			this->panel22->Controls->Add(this->main_page_panel);
 			this->panel22->Controls->Add(this->pictureBox12);
-			this->panel22->Controls->Add(this->panel17);
-			this->panel22->Controls->Add(this->panel6);
-			this->panel22->Controls->Add(this->panel20);
-			this->panel22->Controls->Add(this->panel9);
-			this->panel22->Controls->Add(this->panel21);
-			this->panel22->Controls->Add(this->panel7);
-			this->panel22->Controls->Add(this->panel26);
-			this->panel22->Controls->Add(this->panel3);
-			this->panel22->Controls->Add(this->panel27);
-			this->panel22->Controls->Add(this->panel8);
-			this->panel22->Controls->Add(this->panel28);
-			this->panel22->Controls->Add(this->panel10);
-			this->panel22->Controls->Add(this->panel29);
-			this->panel22->Controls->Add(this->panel11);
-			this->panel22->Controls->Add(this->panel30);
-			this->panel22->Controls->Add(this->panel4);
-			this->panel22->Controls->Add(this->panel2);
 			this->panel22->Name = L"panel22";
 			// 
-			// panel15
+			// main_page_panel
 			// 
-			this->panel15->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel15->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel15, L"panel15");
-			this->panel15->Name = L"panel15";
+			this->main_page_panel->Controls->Add(this->panel2);
+			this->main_page_panel->Controls->Add(this->panel4);
+			this->main_page_panel->Controls->Add(this->panel10);
+			this->main_page_panel->Controls->Add(this->panel3);
+			this->main_page_panel->Controls->Add(this->panel9);
+			this->main_page_panel->Controls->Add(this->panel11);
+			this->main_page_panel->Controls->Add(this->panel30);
+			this->main_page_panel->Controls->Add(this->panel29);
+			this->main_page_panel->Controls->Add(this->panel8);
+			this->main_page_panel->Controls->Add(this->panel27);
+			this->main_page_panel->Controls->Add(this->panel7);
+			this->main_page_panel->Controls->Add(this->panel21);
+			this->main_page_panel->Controls->Add(this->panel6);
+			this->main_page_panel->Controls->Add(this->panel17);
+			this->main_page_panel->Controls->Add(this->panel5);
+			this->main_page_panel->Controls->Add(this->panel16);
+			this->main_page_panel->Controls->Add(this->panel28);
+			this->main_page_panel->Controls->Add(this->panel26);
+			this->main_page_panel->Controls->Add(this->panel20);
+			this->main_page_panel->Controls->Add(this->panel15);
+			resources->ApplyResources(this->main_page_panel, L"main_page_panel");
+			this->main_page_panel->Name = L"main_page_panel";
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::White;
+			this->panel2->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel2, L"panel2");
+			this->panel2->Name = L"panel2";
+			// 
+			// panel4
+			// 
+			this->panel4->BackColor = System::Drawing::Color::White;
+			this->panel4->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel4, L"panel4");
+			this->panel4->Name = L"panel4";
+			// 
+			// panel10
+			// 
+			this->panel10->BackColor = System::Drawing::Color::White;
+			this->panel10->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel10, L"panel10");
+			this->panel10->Name = L"panel10";
+			// 
+			// panel3
+			// 
+			this->panel3->BackColor = System::Drawing::Color::White;
+			this->panel3->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel3, L"panel3");
+			this->panel3->Name = L"panel3";
+			// 
+			// panel9
+			// 
+			this->panel9->BackColor = System::Drawing::Color::White;
+			this->panel9->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel9, L"panel9");
+			this->panel9->Name = L"panel9";
+			// 
+			// panel11
+			// 
+			this->panel11->BackColor = System::Drawing::Color::White;
+			this->panel11->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel11, L"panel11");
+			this->panel11->Name = L"panel11";
+			// 
+			// panel30
+			// 
+			this->panel30->BackColor = System::Drawing::Color::White;
+			this->panel30->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel30, L"panel30");
+			this->panel30->Name = L"panel30";
+			// 
+			// panel29
+			// 
+			this->panel29->BackColor = System::Drawing::Color::White;
+			this->panel29->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel29, L"panel29");
+			this->panel29->Name = L"panel29";
+			// 
+			// panel8
+			// 
+			this->panel8->BackColor = System::Drawing::Color::White;
+			this->panel8->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel8, L"panel8");
+			this->panel8->Name = L"panel8";
+			// 
+			// panel27
+			// 
+			this->panel27->BackColor = System::Drawing::Color::White;
+			this->panel27->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel27, L"panel27");
+			this->panel27->Name = L"panel27";
+			// 
+			// panel7
+			// 
+			this->panel7->BackColor = System::Drawing::Color::White;
+			this->panel7->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel7, L"panel7");
+			this->panel7->Name = L"panel7";
+			// 
+			// panel21
+			// 
+			this->panel21->BackColor = System::Drawing::Color::White;
+			this->panel21->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel21, L"panel21");
+			this->panel21->Name = L"panel21";
+			// 
+			// panel6
+			// 
+			this->panel6->BackColor = System::Drawing::Color::White;
+			this->panel6->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel6, L"panel6");
+			this->panel6->Name = L"panel6";
+			// 
+			// panel17
+			// 
+			this->panel17->BackColor = System::Drawing::Color::White;
+			this->panel17->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel17, L"panel17");
+			this->panel17->Name = L"panel17";
 			// 
 			// panel5
 			// 
-			this->panel5->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panel5->BackColor = System::Drawing::Color::White;
 			this->panel5->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->panel5, L"panel5");
 			this->panel5->Name = L"panel5";
 			// 
 			// panel16
 			// 
-			this->panel16->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panel16->BackColor = System::Drawing::Color::White;
 			this->panel16->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->panel16, L"panel16");
 			this->panel16->Name = L"panel16";
+			// 
+			// panel28
+			// 
+			this->panel28->BackColor = System::Drawing::Color::White;
+			this->panel28->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel28, L"panel28");
+			this->panel28->Name = L"panel28";
+			// 
+			// panel26
+			// 
+			this->panel26->BackColor = System::Drawing::Color::White;
+			this->panel26->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel26, L"panel26");
+			this->panel26->Name = L"panel26";
+			// 
+			// panel20
+			// 
+			this->panel20->BackColor = System::Drawing::Color::White;
+			this->panel20->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel20, L"panel20");
+			this->panel20->Name = L"panel20";
+			// 
+			// panel15
+			// 
+			this->panel15->BackColor = System::Drawing::Color::White;
+			this->panel15->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->panel15, L"panel15");
+			this->panel15->Name = L"panel15";
 			// 
 			// pictureBox12
 			// 
@@ -580,124 +707,18 @@ namespace bookstore {
 			this->pictureBox12->Name = L"pictureBox12";
 			this->pictureBox12->TabStop = false;
 			// 
-			// panel17
+			// flowLayoutPanel1
 			// 
-			this->panel17->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel17->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel17, L"panel17");
-			this->panel17->Name = L"panel17";
-			// 
-			// panel6
-			// 
-			this->panel6->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel6->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel6, L"panel6");
-			this->panel6->Name = L"panel6";
-			// 
-			// panel20
-			// 
-			this->panel20->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel20->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel20, L"panel20");
-			this->panel20->Name = L"panel20";
-			// 
-			// panel9
-			// 
-			this->panel9->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel9->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel9, L"panel9");
-			this->panel9->Name = L"panel9";
-			// 
-			// panel21
-			// 
-			this->panel21->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel21->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel21, L"panel21");
-			this->panel21->Name = L"panel21";
-			// 
-			// panel7
-			// 
-			this->panel7->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel7->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel7, L"panel7");
-			this->panel7->Name = L"panel7";
-			// 
-			// panel26
-			// 
-			this->panel26->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel26->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel26, L"panel26");
-			this->panel26->Name = L"panel26";
-			// 
-			// panel3
-			// 
-			this->panel3->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel3->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel3, L"panel3");
-			this->panel3->Name = L"panel3";
-			// 
-			// panel27
-			// 
-			this->panel27->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel27->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel27, L"panel27");
-			this->panel27->Name = L"panel27";
-			// 
-			// panel8
-			// 
-			this->panel8->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel8->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel8, L"panel8");
-			this->panel8->Name = L"panel8";
-			// 
-			// panel28
-			// 
-			this->panel28->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel28->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel28, L"panel28");
-			this->panel28->Name = L"panel28";
-			// 
-			// panel10
-			// 
-			this->panel10->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel10->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel10, L"panel10");
-			this->panel10->Name = L"panel10";
-			// 
-			// panel29
-			// 
-			this->panel29->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel29->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel29, L"panel29");
-			this->panel29->Name = L"panel29";
-			// 
-			// panel11
-			// 
-			this->panel11->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel11->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel11, L"panel11");
-			this->panel11->Name = L"panel11";
-			// 
-			// panel30
-			// 
-			this->panel30->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel30->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel30, L"panel30");
-			this->panel30->Name = L"panel30";
-			// 
-			// panel4
-			// 
-			this->panel4->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel4->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel4, L"panel4");
-			this->panel4->Name = L"panel4";
-			// 
-			// panel2
-			// 
-			this->panel2->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panel2->Cursor = System::Windows::Forms::Cursors::Hand;
-			resources->ApplyResources(this->panel2, L"panel2");
-			this->panel2->Name = L"panel2";
+			this->flowLayoutPanel1->Controls->Add(this->panel32);
+			this->flowLayoutPanel1->Controls->Add(this->panel25);
+			this->flowLayoutPanel1->Controls->Add(this->panel19);
+			this->flowLayoutPanel1->Controls->Add(this->panel23);
+			this->flowLayoutPanel1->Controls->Add(this->panel13);
+			this->flowLayoutPanel1->Controls->Add(this->panel18);
+			this->flowLayoutPanel1->Controls->Add(this->panel12);
+			this->flowLayoutPanel1->Controls->Add(this->panel14);
+			resources->ApplyResources(this->flowLayoutPanel1, L"flowLayoutPanel1");
+			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
 			// 
 			// MyForm
 			// 
@@ -748,13 +769,27 @@ namespace bookstore {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->panel22->ResumeLayout(false);
+			this->main_page_panel->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
+			this->flowLayoutPanel1->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
 		bool drag = false;
 		Point start_point;
+		void set_book_test()
+		{
+			int a = 0;
+			for each (Panel ^ ctrl in main_page_panel->Controls) {
+				a++;
+				bookmadule^ page = gcnew bookmadule();
+				//ctrl->Height = page->Height;
+				//ctrl->Width =  page->Width;
+				ctrl->Controls->Add(page);
 
+			}
+
+		}
 #pragma endregion
 	private: System::Void exitbtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		Application::Exit();
@@ -818,8 +853,9 @@ private: System::Void pictureBox10_Click(System::Object^ sender, System::EventAr
 	signinsignup^ form2 = gcnew signinsignup();
 	signup^ page = gcnew signup();
 	form2->Text = "sign up";
-	form2->Height = 690;
-	form2->Width = 820;
+	form2->Height = page->Height+47;
+	form2->Width = page->Width;
+	form2->Controls->Add(page);
 	form2->Show();
 }
 private: System::Void panel31_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -850,6 +886,7 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 	form2->Text = "sign in";
 	form2->Controls->Add(page);
 	form2->Show();
+	set_book_test();
 
 
 }

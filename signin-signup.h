@@ -65,7 +65,7 @@ namespace bookstore {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(729, 400);
+			this->ClientSize = System::Drawing::Size(842, 446);
 			this->Name = L"signinsignup";
 			this->Text = L"signinsignup";
 			this->ResumeLayout(false);
