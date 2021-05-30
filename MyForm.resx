@@ -1057,7 +1057,7 @@
     <value>7</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 127</value>
+    <value>25, 125</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 388</value>
@@ -1093,7 +1093,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 5</value>
+    <value>94, 5</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 28</value>
@@ -1126,7 +1126,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 5</value>
+    <value>33, 5</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 26</value>
@@ -1150,10 +1150,10 @@
     <value>1</value>
   </data>
   <data name="panel31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 584</value>
+    <value>30, 584</value>
   </data>
   <data name="panel31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 37</value>
+    <value>132, 37</value>
   </data>
   <data name="panel31.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1204,7 +1204,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 5</value>
+    <value>94, 4</value>
   </data>
   <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 28</value>
@@ -1237,7 +1237,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 6</value>
+    <value>25, 6</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 26</value>
@@ -1261,10 +1261,10 @@
     <value>1</value>
   </data>
   <data name="panel24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 541</value>
+    <value>30, 541</value>
   </data>
   <data name="panel24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 37</value>
+    <value>132, 37</value>
   </data>
   <data name="panel24.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1320,10 +1320,10 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 29</value>
+    <value>18, 26</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 48</value>
+    <value>156, 77</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1347,7 +1347,7 @@
     <value>0, 40</value>
   </data>
   <data name="header.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 664</value>
+    <value>202, 664</value>
   </data>
   <data name="header.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1848,7 +1848,7 @@
     <value>19</value>
   </data>
   <data name="main_page_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 306</value>
+    <value>64, 303</value>
   </data>
   <data name="main_page_panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1024, 1328</value>
@@ -11134,10 +11134,10 @@
 </value>
   </data>
   <data name="pictureBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 4</value>
+    <value>20, 4</value>
   </data>
   <data name="pictureBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1188, 277</value>
+    <value>1096, 277</value>
   </data>
   <data name="pictureBox12.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -11158,10 +11158,10 @@
     <value>1</value>
   </data>
   <data name="panel22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 40</value>
+    <value>202, 40</value>
   </data>
   <data name="panel22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1214, 664</value>
+    <value>1177, 664</value>
   </data>
   <data name="panel22.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
