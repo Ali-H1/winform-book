@@ -127,17 +127,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="book madules\bookmadule.cpp" />
-    <ClCompile Include="sources\BookDetail.cpp" />
-    <ClCompile Include="sources\bookmadule.cpp" />
-    <ClCompile Include="sources\Form2.cpp" />
-    <ClCompile Include="sources\MyForm.cpp" />
-    <ClCompile Include="sources\signup.cpp" />
-    <ClCompile Include="sources\signin-signup.cpp" />
-    <ClCompile Include="sources\signin.cpp" />
+    <ClCompile Include="BookDetail.cpp" />
+    <ClCompile Include="bookmadule.cpp" />
+    <ClCompile Include="Form2.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="signup.cpp" />
+    <ClCompile Include="signin-signup.cpp" />
+    <ClCompile Include="signin.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="book madules\bookmadule.h" />
     <ClInclude Include="BookDetail.h">
       <FileType>CppControl</FileType>
     </ClInclude>
@@ -153,6 +151,7 @@
     <ClInclude Include="signup.h">
       <FileType>CppControl</FileType>
     </ClInclude>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="signin-signup.h">
       <FileType>CppForm</FileType>
     </ClInclude>
