@@ -130,7 +130,7 @@ namespace bookstore {
 	private: System::Windows::Forms::FlowLayoutPanel^ main_page_panel;
 private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel1;
 private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::Button^ button1;
+
 
 
 
@@ -181,7 +181,6 @@ private: System::Windows::Forms::Button^ button1;
 			this->header = (gcnew System::Windows::Forms::Panel());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->flowLayoutPanel1 = (gcnew System::Windows::Forms::FlowLayoutPanel());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel32 = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -322,7 +321,6 @@ private: System::Windows::Forms::Button^ button1;
 			// 
 			// flowLayoutPanel1
 			// 
-			this->flowLayoutPanel1->Controls->Add(this->button1);
 			this->flowLayoutPanel1->Controls->Add(this->panel32);
 			this->flowLayoutPanel1->Controls->Add(this->panel25);
 			this->flowLayoutPanel1->Controls->Add(this->panel19);
@@ -332,13 +330,6 @@ private: System::Windows::Forms::Button^ button1;
 			this->flowLayoutPanel1->Controls->Add(this->panel12);
 			resources->ApplyResources(this->flowLayoutPanel1, L"flowLayoutPanel1");
 			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			// 
-			// button1
-			// 
-			this->button1->BackColor = System::Drawing::Color::AliceBlue;
-			resources->ApplyResources(this->button1, L"button1");
-			this->button1->Name = L"button1";
-			this->button1->UseVisualStyleBackColor = false;
 			// 
 			// panel32
 			// 
@@ -781,28 +772,28 @@ private: System::Windows::Forms::Button^ button1;
 		void set_book_test()
 		{
 			vector<tuple<std::wstring, std::wstring, std::wstring,string>> alpha;
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\3264_68232_normal.jpg",L"پیرمرد و دریا",L"ارنست همینگوی","20,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\86104_42858_normal.jpg",L"عقاید یک دلقک",L"هاینریش بل","26,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\1.jpg",L"من پیش از تو",L"جوجو مویز","16,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\2.jpg",L"کتاب مغازه خودکشی",L"ژان تولی","20,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\3.jpg",L"جزء از کل",L"استیو تولتز","40,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\4.jpg",L"مزرعه حیوانات",L"جورج اورول","17,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\5.jpg",L"سمفونی مردگان",L"عباس معروفی","23,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\6.jpg",L"مردی به نام اوه",L"","27,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\7.jpg",L"چشم هایش",L"بزرگ علوی","30,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\8.jpg",L"دور دنیا در 80 روز",L"ژول ورن","33,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\9.jpg",L"قمارباز",L"فئودور داستایوفسکی","25,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\10.jpg",L"استیو جابز",L"والتر ایساکسون","19,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\11.jpg",L"ناتور دشت",L"جی دی سلینجر","34,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\12.jpg",L"سینوهه",L"میکا والتری","67,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\13.jpg",L"فانوس های لرزان",L"نسرین تبریزی","33,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\14.jpg",L"جهان هولوگرافیک",L"مایکل تالبوت","54,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\15.jpg",L"آدم آهنی",L"نادر ابراهیمی","43,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\16.jpg",L"تکنیک های بازار یابی",L"حسین یاغچی","23,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\17.jpg",L"بازار یابی و فروش نرم افزار",L"خدایار عبداللهی","17,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\18.jpg",L"تحلیل تکنیکال بازار سرمایه",L"جان مورفی","27,000"));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\19.jpg",L"",L"",""));
-			alpha.push_back(make_tuple(L"C:\\Users\\ASUS\\Desktop\\photoes\\20.jpg",L"",L"",""));
+			alpha.push_back(make_tuple(L"covers\\3264_68232_normal.jpg",L"پیرمرد و دریا",L"ارنست همینگوی","20,000"));
+			alpha.push_back(make_tuple(L"covers\\86104_42858_normal.jpg",L"عقاید یک دلقک",L"هاینریش بل","26,000"));
+			alpha.push_back(make_tuple(L"covers\\1.jpg",L"من پیش از تو",L"جوجو مویز","16,000"));
+			alpha.push_back(make_tuple(L"covers\\2.jpg",L"کتاب مغازه خودکشی",L"ژان تولی","20,000"));
+			alpha.push_back(make_tuple(L"covers\\3.jpg",L"جزء از کل",L"استیو تولتز","40,000"));
+			alpha.push_back(make_tuple(L"covers\\4.jpg",L"مزرعه حیوانات",L"جورج اورول","17,000"));
+			alpha.push_back(make_tuple(L"covers\\5.jpg",L"سمفونی مردگان",L"عباس معروفی","23,000"));
+			alpha.push_back(make_tuple(L"covers\\6.jpg",L"مردی به نام اوه",L"","27,000"));
+			alpha.push_back(make_tuple(L"covers\\7.jpg",L"چشم هایش",L"بزرگ علوی","30,000"));
+			alpha.push_back(make_tuple(L"covers\\8.jpg",L"دور دنیا در 80 روز",L"ژول ورن","33,000"));
+			alpha.push_back(make_tuple(L"covers\\9.jpg",L"قمارباز",L"فئودور داستایوفسکی","25,000"));
+			alpha.push_back(make_tuple(L"covers\\10.jpg",L"استیو جابز",L"والتر ایساکسون","19,000"));
+			alpha.push_back(make_tuple(L"covers\\11.jpg",L"ناتور دشت",L"جی دی سلینجر","34,000"));
+			alpha.push_back(make_tuple(L"covers\\12.jpg",L"سینوهه",L"میکا والتری","67,000"));
+			alpha.push_back(make_tuple(L"covers\\13.jpg",L"فانوس های لرزان",L"نسرین تبریزی","33,000"));
+			alpha.push_back(make_tuple(L"covers\\14.jpg",L"جهان هولوگرافیک",L"مایکل تالبوت","54,000"));
+			alpha.push_back(make_tuple(L"covers\\15.jpg",L"آدم آهنی",L"نادر ابراهیمی","43,000"));
+			alpha.push_back(make_tuple(L"covers\\16.jpg",L"تکنیک های بازار یابی",L"حسین یاغچی","23,000"));
+			alpha.push_back(make_tuple(L"covers\\17.jpg",L"بازار یابی و فروش نرم افزار",L"خدایار عبداللهی","17,000"));
+			alpha.push_back(make_tuple(L"covers\\18.jpg",L"تحلیل تکنیکال بازار سرمایه",L"جان مورفی","27,000"));
+			alpha.push_back(make_tuple(L"covers\\19.jpg",L"",L"",""));
+			alpha.push_back(make_tuple(L"covers\\20.jpg",L"",L"",""));
 			int a = 0;
 			for each (Panel ^ ctrl in main_page_panel->Controls) {
 				bookmadule^ page = gcnew bookmadule();
