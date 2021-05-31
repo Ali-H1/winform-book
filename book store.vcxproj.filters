@@ -15,25 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyForm.cpp">
+    <ClCompile Include="book madules\bookmadule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="signin-signup.cpp">
+    <ClCompile Include="sources\bookmadule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Form2.cpp">
+    <ClCompile Include="sources\BookDetail.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="signin.cpp">
+    <ClCompile Include="sources\MyForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="signup.cpp">
+    <ClCompile Include="sources\Form2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bookmadule.cpp">
+    <ClCompile Include="sources\signin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BookDetail.cpp">
+    <ClCompile Include="sources\signin-signup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\signup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,9 +45,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="signin-signup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Form2.h">
@@ -60,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BookDetail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book madules\bookmadule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

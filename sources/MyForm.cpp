@@ -1,13 +1,13 @@
-#include "signin-signup.h"
+#include "../Headers/MyForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
 
 [STAThreadAttribute]
-void Main2(array<String^>^ args)
+void Main(array<String^>^ args)
 {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
-    bookstore::signinsignup form;
+    bookstore::MyForm form;
     Application::Run(% form);
 }
